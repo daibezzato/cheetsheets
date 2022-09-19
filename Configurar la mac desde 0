@@ -1,0 +1,58 @@
+# Configurar la mac desde 0
+
+- Chequea que sistema operativo tiene instalado tu computadora, llevar a la Última versión estable.
+
+- Loguearte en tu cuenta apple id (Yo prefiero esto porque sincronizo todo de esta manera).
+
+- Revisa que por ejemplo en notas no las hayas guardado en el mail en vez de icloud, sino sincronizar ambas cuentas. 
+
+- Instalar [Brew](https://brew.sh/).
+
+
+-	La contraseña que se usa para descargar repos y eso es la del two factor. 
+
+
+-	Si sourcetree después de configurar todo te sigue pidiendo la contraseña pone esto en la terminal : 
+    - git config --global credential.helper osxkeychain
+
+## Consola 
+
+- [Setup git y tus credenciales](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup).
+
+- Configura la terminal para que [esté linda](https://www.freecodecamp.org/news/how-to-configure-your-macos-terminal-with-zsh-like-a-pro-c0ab3f3c1156/).
+
+- Configurar Usuario de Git
+    - $ git config --global user.name "John Doe"
+    - $ git config --global user.email johndoe@example.com
+
+- Configura la herramienta de mergeo de git
+     - git config --global merge.tool OpenDiff
+     - git config --global mergetool.keepBackup false (esto evita que te genere archivos de backup re molestos)
+     - Si tenes problemas con el  mergetool leete [esto](https://github.com/nodejs/node-gyp/issues/569).
+
+ - Configure las comandlinetols de xcode 
+     - xcode-select --install 
+     - sudo xcode-select --switch /Library/Developer/CommandLineTools 
+
+-	Para ver la configuración de git usa el comando. 
+    - git config --list
+
+### Configurar SSH Key
+-	Para gitlab enterprise es importante configurar el ssh de tu computadora dentro de tu cuenta de gitlab.
+    - Asi creas la  key en la consola:
+        - ssh-keygen -t rsa -b 2048 -C "<comment>"
+    - Asi la copias: 
+        - tr -d '\n' < ~/.ssh/id_rsa.pub | pbcopy
+
+
+## Programas a instalar
+- xCode
+- Slack
+- SourceTree.
+- Chrome
+- Setear mails
+- Setear cuentas de chat
+- Slack
+- Cocoapods
+- Discord
+- Postman
